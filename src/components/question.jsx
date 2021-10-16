@@ -8,14 +8,22 @@ function Question(props) {
   let questionText = props.questionText;
   let questionAnswer = props.questionAnswer;
   return (
-      <div>
+    <div id="question">
+      <div id="questionContainerRow">
         <div class="collapsibleContainer">
-          <Collapsible trigger={questionText}>
-            <img src={arrow}></img>
-            <p>{questionAnswer}</p>
-          </Collapsible>
+            <Collapsible trigger={questionText}>
+              <img src={arrow}></img>
+              <p>{questionAnswer}</p>
+            </Collapsible>
+        </div>
+        <div id="arrowContainer">
+          <img src={arrow}></img>
         </div>
       </div>
+      <div id="questionContainerCol">
+        <img src={line}></img>
+      </div>
+    </div>
   )
 }
 

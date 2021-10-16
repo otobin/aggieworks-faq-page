@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+* {
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-container {
+  background-color: #FFDFB0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-text {
+  position: relative;
+  top: 200px;
+  margin-left: 50%;
+  background-color: lightcyan;
+  color: #0A3D3F;
+  font-family: Inter;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 77px;
+  letter-spacing: 0.03em;
+  /* width: 42%; */
+  text-align: right;
+  padding-right: 5%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.graphic {
+  /* background-color: lightgrey; */
+  position: relative;
+  width: 50%;
+  bottom: 100px
+}
+
+#blue_splash {
+  position: relative;
+  width: 60%;
+  margin-left: 5%;
+  z-index: 1;
+}
+#green_splash {
+  position: absolute;
+  width: 70%;
+  right: 40px;
+  /* bottom: -150px; */
+  z-index: 2;
+}
+
+#human {
+  position: absolute;
+  z-index: 3;
+  left: 50px;
+  bottom: -90px;
+  height: 100%;
+}
+
+#clock {
+  position: absolute;
+  z-index: 3;
+  left: 200px;
+  top: 40px;
+}
+
+#chat_bubbles {
+  position: absolute;
+  z-index: 3;
+  right: 205px;
+  bottom: 0px;
+}
+
+.questions {
+  font-family: Inter;
+  color: #0A3D3F;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0.03em;
+  text-align: left;
+
+  margin-left: 25%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* justify-content: center;
+  align-items: center; */
 }
 
-.App-link {
-  color: #61dafb;
+#questions-title {
+  font-size: 50px;
+  font-weight: 60.51px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#sub-title {
+  font-family: Gothic A1;
+  color: #4F7476;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
 }

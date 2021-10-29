@@ -12,7 +12,6 @@ function Question(props) {
       <div id="questionContainerRow">
         <div class="collapsibleContainer">
             <Collapsible trigger={questionText}>
-              <img src={arrow}></img>
               <p>{questionAnswer}</p>
             </Collapsible>
         </div>

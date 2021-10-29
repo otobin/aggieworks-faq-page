@@ -18,8 +18,9 @@ let question8 = { questionText: "Can I delete my reviews?", questionAnswer: "Que
 let question9 = { questionText: "Can I reply to my reviews?", questionAnswer: "Question 4 Answer"};
 
 function App() {
+
   return (
-    <div className="FAQ-page">
+    <div className="FAQ-page" style={{fontFamily: 'Inter_900Black'}}>
       <div className="header-container">
         <p className="header-text">Frequently Asked Questions</p>
         <div className="graphic">
@@ -32,21 +33,25 @@ function App() {
       </div>
 
       <div className="questions">
-        <p id="questions-title">Frequently Asked Questions</p>
-        <div className="student-questions">
-          <p id="category-title">Student Questions</p>
-          <Question questionText={question1.questionText} questionAnswer={question1.questionAnswer}></Question>
-          <Question questionText={question2.questionText} questionAnswer={question2.questionAnswer}></Question>
-          <Question questionText={question3.questionText} questionAnswer={question3.questionAnswer}></Question>
-          <Question questionText={question4.questionText} questionAnswer={question4.questionAnswer}></Question>
-          <Question questionText={question5.questionText} questionAnswer={question5.questionAnswer}></Question>
-          <Question questionText={question6.questionText} questionAnswer={question6.questionAnswer}></Question>
-          <Question questionText={question7.questionText} questionAnswer={question7.questionAnswer}></Question>
+        <div id="questions-title-container">
+          <p id="questions-title">Frequently Asked Questions</p>
         </div>
-        <div className="professor-questions">
-          <p id="category-title">Professor Questions</p>
-          <Question questionText={question8.questionText} questionAnswer={question8.questionAnswer}></Question>
-          <Question questionText={question9.questionText} questionAnswer={question9.questionAnswer}></Question>
+        <div id="questions-div-flex">
+          <div className="student-questions">
+            <p id="category-title">Student Questions</p>
+            <Question questionText={question1.questionText} questionAnswer={question1.questionAnswer}></Question>
+            <Question questionText={question2.questionText} questionAnswer={question2.questionAnswer}></Question>
+            <Question questionText={question3.questionText} questionAnswer={question3.questionAnswer}></Question>
+            <Question questionText={question4.questionText} questionAnswer={question4.questionAnswer}></Question>
+            <Question questionText={question5.questionText} questionAnswer={question5.questionAnswer}></Question>
+            <Question questionText={question6.questionText} questionAnswer={question6.questionAnswer}></Question>
+            <Question questionText={question7.questionText} questionAnswer={question7.questionAnswer}></Question>
+          </div>
+          <div className="professor-questions">
+            <p id="category-title">Professor Questions</p>
+            <Question questionText={question8.questionText} questionAnswer={question8.questionAnswer}></Question>
+            <Question questionText={question9.questionText} questionAnswer={question9.questionAnswer}></Question>
+          </div>
         </div>
       </div>
     </div>
